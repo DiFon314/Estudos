@@ -32,6 +32,19 @@
 .jump{
     animation: marioanimation 750ms ease-out;
 }
+.div{ 
+    width: 70px;
+    padding: 7.5px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 40px;
+    left: 500px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+#p{
+    font-weight:bold;
+}
 @keyframes pipeanimation {
     from{
         right: -80px;
