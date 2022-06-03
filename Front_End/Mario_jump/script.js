@@ -1,6 +1,7 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 const p = document.querySelector('.p');
+const nuvens = document.querySelector('.nuvens');
 var ss= 000000;
 const addjump=()=>{
     mario.classList.add('jump');
@@ -10,8 +11,9 @@ const addjump=()=>{
 const loop=setInterval(()=>{
 
     const pipeposition = pipe.offsetLeft;
+    const nuvensposition = nuvens.offsetLeft;
     const marioAltura=+window.getComputedStyle(mario).bottom.replace('px','');
-
+    nuvens.classList.add('move')
     /* Jogo Acabando*/
     if(pipeposition<=120 &&pipeposition > 0 && marioAltura <=120){
 
@@ -29,11 +31,21 @@ const loop=setInterval(()=>{
         
         clearInterval(loop);
         clearInterval(score);
+
+        nuvens.style.animation='none';
+        nuvens.style.left=`${nuvensposition}px`;
+
+        /*Tela de Game-over*/
+
+        window.document.body.insertAdjacentHTML('beforeend', '<button id="botao" class="botao" onclick="recomeçar()">Jogar novamente</button>');
+
     }
 
 },10)
 
-
+function recomeçar(){
+    window.alert('Teste')
+}
 
 const score=setInterval(()=>{
     ss++

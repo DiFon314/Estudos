@@ -1,14 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    background-color: #2d373b;
+}
+.titulo{
+    margin: 0 auto;
+    color:white;
+    width: 400px;
+    padding: 10px;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
 }
 .game-board{
     width: 90%;
     height: 500px;
     border: 5px solid black;
     margin: 0 auto ;
-    margin-top: 50px;
     position: relative;
     overflow: hidden;
     background: linear-gradient(#87CEEB, #E0F6FF);
@@ -16,7 +27,8 @@
 .nuvens{
     position: absolute;
     width: 500px;
-    animation: nuvemanimation 10s infinite linear;
+    top:5px;
+    right:-500px;
 }
 .pipe{
     position: absolute;
@@ -29,6 +41,9 @@
     width: 150px;
     bottom: 0;
 }
+.move{
+    animation: nuvemanimation 10s infinite linear;
+}
 .jump{
     animation: marioanimation 750ms ease-out;
 }
@@ -37,8 +52,8 @@
     padding: 7.5px;
     background-color: aliceblue;
     position: absolute;
-    top: 40px;
-    left: 500px;
+    top: 40px;  
+    left: 45%;
     border: 3px solid black;
     border-radius: 10px;
 }
