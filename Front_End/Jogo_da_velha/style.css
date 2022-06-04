@@ -50,17 +50,17 @@ body{
 .cell:nth-child(7),.cell:nth-child(8),.cell:nth-child(9){
     border-bottom: none;
 }
-.cell.x::before,.cell.x::after, .board.x .cell:hover::after,.board.x .cell:hover::before{
+.cell.x::before,.cell.x::after, .board.x .cell:not(.x):not(.o):hover::after,.board.x .cell:not(.x):not(.o):hover::before{
     content: "";
     height: calc(100px * 0.15);
     width: calc(100px * 0.9);
     background: white;
     position: absolute;
 }
-.cell.x::before, .board.x .cell:hover::before{
+.cell.x::before, .board.x .cell:not(.x):not(.o):hover::before{
     transform: rotate(45deg);
 }
-.cell.x::after, .board.x .cell:hover::after{
+.cell.x::after, .board.x .cell:not(.x):not(.o):hover::after{
     transform: rotate(-45deg);
 }
 .cell.o::before,.cell.o::after{
