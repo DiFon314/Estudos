@@ -24,6 +24,11 @@ body{
     align-items: center;
     grid-template-columns: repeat(3,auto);
 }
+.board.x .cell:not(.x):not(.o):hover::after,
+.board.x .cell:not(.x):not(.o):hover::before{
+    background: rgba(255, 255, 255, .3) !important;
+}
+
 .cell{
     width: 100px;
     height: 100px;
@@ -63,6 +68,9 @@ body{
 .cell.x::after, .board.x .cell:not(.x):not(.o):hover::after{
     transform: rotate(-45deg);
 }
+
+/* circulo */
+
 .cell.o::before,.cell.o::after{
     content: "";
     height: calc(100px * 0.9);
