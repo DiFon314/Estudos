@@ -18,10 +18,8 @@ header{
 span{
     color: rgb(0, 119, 255);
 }
-h1{
-    color: white;
-}
 .titulo{
     width: 400px;
     padding-left: 10px;
+    color: white;
 }
