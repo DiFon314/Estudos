@@ -1,0 +1,19 @@
+{
+  "name": "lamp_iot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node blink.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "five": "^0.8.0",
+    "johnny": "^2.0.0",
+    "johnny-five": "^2.1.0",
+    "serialport": "^10.4.0"
+  }
+}
