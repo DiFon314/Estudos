@@ -32,4 +32,7 @@ board.on("ready", () => {
       led.intensity(100);
     }
   }]);
+  board.repl.inject({
+    led,
+  });
 });
