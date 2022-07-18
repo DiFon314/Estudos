@@ -13,7 +13,7 @@ export default function App() {
 
       <StatusBar barStyle='light-content' backgroundColor="transparent" translucent/>
 
-      {fontsLoaded ? <SingIn/>:<Loading/>}
+      {fontsLoaded ? <SingIn/> :<Loading/>}
     </NativeBaseProvider>
   );
 }
