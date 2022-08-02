@@ -5,6 +5,7 @@ import { THEME } from './src/styles/theme';
 
 import { SingIn } from './src/screens/SingIn';
 import { Loading } from './src/components/Loading';
+import { Home } from './src/screens/Home';
 
 export default function App() {
   const[fontsLoaded]=useFonts({Roboto_400Regular,Roboto_700Bold});
@@ -13,7 +14,7 @@ export default function App() {
 
       <StatusBar barStyle='light-content' backgroundColor="transparent" translucent/>
 
-      {fontsLoaded ? <SingIn/> :<Loading/>}
+      {fontsLoaded ? <SingIn/> :<Home/>}
     </NativeBaseProvider>
   );
 }
